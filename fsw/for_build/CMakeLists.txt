@@ -35,7 +35,7 @@ set(PX4LIB_PUBLIC_INCLUDE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/../public_inc)
 
 add_subdirectory(../src/ src)
 
-add_airliner_app_def(px4lib
+buildliner_add_app_def(px4lib
     FILE PX4LIB
     SOURCES
         ${PX4LIB_SOURCES}
@@ -56,7 +56,7 @@ add_airliner_app_def(px4lib
         ${PROJECT_SOURCE_DIR}/apps/px4lib/fsw/platform_inc
 )
 
-add_airliner_app_unit_test(px4lib-vector1f-ut
+buildliner_add_app_unit_test(px4lib-vector1f-ut
     UTASSERT
     NO_HELGRIND
     NO_MASSIF
@@ -79,7 +79,7 @@ add_airliner_app_unit_test(px4lib-vector1f-ut
 )
 
 
-add_airliner_app_unit_test(px4lib-vector2f-ut
+buildliner_add_app_unit_test(px4lib-vector2f-ut
     UTASSERT
     NO_HELGRIND
     NO_MASSIF
@@ -102,7 +102,7 @@ add_airliner_app_unit_test(px4lib-vector2f-ut
 )
 
 
-add_airliner_app_unit_test(px4lib-vector3f-ut
+buildliner_add_app_unit_test(px4lib-vector3f-ut
     UTASSERT
     NO_HELGRIND
     NO_MASSIF
@@ -125,7 +125,7 @@ add_airliner_app_unit_test(px4lib-vector3f-ut
 )
 
 
-add_airliner_app_unit_test(px4lib-vector4f-ut
+buildliner_add_app_unit_test(px4lib-vector4f-ut
     UTASSERT
     NO_HELGRIND
     NO_MASSIF
@@ -149,7 +149,7 @@ add_airliner_app_unit_test(px4lib-vector4f-ut
 )
 
 
-add_airliner_app_unit_test(px4lib-vector6f-ut
+buildliner_add_app_unit_test(px4lib-vector6f-ut
     UTASSERT
     NO_HELGRIND
     NO_MASSIF
@@ -172,7 +172,7 @@ add_airliner_app_unit_test(px4lib-vector6f-ut
 )
 
 
-add_airliner_app_unit_test(px4lib-vector10f-ut
+buildliner_add_app_unit_test(px4lib-vector10f-ut
     UTASSERT
     NO_HELGRIND
     NO_MASSIF
@@ -195,7 +195,7 @@ add_airliner_app_unit_test(px4lib-vector10f-ut
 )
 
 
-add_airliner_app_unit_test(px4lib-quaternion-ut
+buildliner_add_app_unit_test(px4lib-quaternion-ut
     UTASSERT
     NO_HELGRIND
     NO_MASSIF
@@ -218,7 +218,7 @@ add_airliner_app_unit_test(px4lib-quaternion-ut
 )
 
 
-add_airliner_app_unit_test(px4lib-matrix1f2-ut
+buildliner_add_app_unit_test(px4lib-matrix1f2-ut
     UTASSERT
     NO_HELGRIND
     NO_MASSIF
@@ -240,7 +240,7 @@ add_airliner_app_unit_test(px4lib-matrix1f2-ut
         ${CMAKE_CURRENT_SOURCE_DIR}/../unit_test/px4lib-matrix1f2-ut.supp
 )
 
-add_airliner_app_unit_test(px4lib-matrix1f3-ut
+buildliner_add_app_unit_test(px4lib-matrix1f3-ut
     UTASSERT
     NO_HELGRIND
     NO_MASSIF
@@ -263,7 +263,7 @@ add_airliner_app_unit_test(px4lib-matrix1f3-ut
 )
 
 
-add_airliner_app_unit_test(px4lib-matrix1f6-ut
+buildliner_add_app_unit_test(px4lib-matrix1f6-ut
     UTASSERT
     NO_HELGRIND
     NO_MASSIF
@@ -286,7 +286,7 @@ add_airliner_app_unit_test(px4lib-matrix1f6-ut
 )
 
 
-add_airliner_app_unit_test(px4lib-matrix2f2-ut
+buildliner_add_app_unit_test(px4lib-matrix2f2-ut
     UTASSERT
     NO_HELGRIND
     NO_MASSIF
@@ -309,7 +309,7 @@ add_airliner_app_unit_test(px4lib-matrix2f2-ut
 )
 
 
-add_airliner_app_unit_test(px4lib-matrix2f10-ut
+buildliner_add_app_unit_test(px4lib-matrix2f10-ut
     UTASSERT
     NO_HELGRIND
     NO_MASSIF
@@ -332,7 +332,7 @@ add_airliner_app_unit_test(px4lib-matrix2f10-ut
 )
 
 
-add_airliner_app_unit_test(px4lib-matrix3f3-ut
+buildliner_add_app_unit_test(px4lib-matrix3f3-ut
     UTASSERT
     NO_HELGRIND
     NO_MASSIF
@@ -354,7 +354,7 @@ add_airliner_app_unit_test(px4lib-matrix3f3-ut
         ${CMAKE_CURRENT_SOURCE_DIR}/../unit_test/px4lib-matrix3f3-ut.supp
 )
 
-add_airliner_app_unit_test(px4lib-matrix3f10-ut
+buildliner_add_app_unit_test(px4lib-matrix3f10-ut
     UTASSERT
     NO_HELGRIND
     NO_MASSIF
@@ -377,7 +377,7 @@ add_airliner_app_unit_test(px4lib-matrix3f10-ut
 )
 
 
-add_airliner_app_unit_test(px4lib-matrix4f4-ut
+buildliner_add_app_unit_test(px4lib-matrix4f4-ut
     UTASSERT
     NO_HELGRIND
     NO_MASSIF
@@ -400,7 +400,7 @@ add_airliner_app_unit_test(px4lib-matrix4f4-ut
 )
 
 
-add_airliner_app_unit_test(px4lib-matrix6f1-ut
+buildliner_add_app_unit_test(px4lib-matrix6f1-ut
     UTASSERT
     NO_HELGRIND
     NO_MASSIF
@@ -423,7 +423,7 @@ add_airliner_app_unit_test(px4lib-matrix6f1-ut
 )
 
 
-add_airliner_app_unit_test(px4lib-matrix6f6-ut
+buildliner_add_app_unit_test(px4lib-matrix6f6-ut
     UTASSERT
     NO_HELGRIND
     NO_MASSIF
@@ -447,7 +447,7 @@ add_airliner_app_unit_test(px4lib-matrix6f6-ut
 
 
 
-add_airliner_app_unit_test(px4lib-matrix1f10-ut
+buildliner_add_app_unit_test(px4lib-matrix1f10-ut
     UTASSERT
     NO_HELGRIND
     NO_MASSIF
@@ -470,7 +470,7 @@ add_airliner_app_unit_test(px4lib-matrix1f10-ut
 )
 
 
-add_airliner_app_unit_test(px4lib-matrix10f1-ut
+buildliner_add_app_unit_test(px4lib-matrix10f1-ut
     UTASSERT
     NO_HELGRIND
     NO_MASSIF
@@ -492,7 +492,7 @@ add_airliner_app_unit_test(px4lib-matrix10f1-ut
         ${CMAKE_CURRENT_SOURCE_DIR}/../unit_test/px4lib-matrix10f1-ut.supp
 )
 
-add_airliner_app_unit_test(px4lib-matrix1f1-ut
+buildliner_add_app_unit_test(px4lib-matrix1f1-ut
     UTASSERT
     NO_HELGRIND
     NO_MASSIF
@@ -515,7 +515,7 @@ add_airliner_app_unit_test(px4lib-matrix1f1-ut
 )
 
 
-add_airliner_app_unit_test(px4lib-matrix10f2-ut
+buildliner_add_app_unit_test(px4lib-matrix10f2-ut
     UTASSERT
     NO_HELGRIND
     NO_MASSIF
@@ -538,7 +538,7 @@ add_airliner_app_unit_test(px4lib-matrix10f2-ut
 )
 
 
-add_airliner_app_unit_test(px4lib-matrix10f3-ut
+buildliner_add_app_unit_test(px4lib-matrix10f3-ut
     UTASSERT
     NO_HELGRIND
     NO_MASSIF
@@ -561,7 +561,7 @@ add_airliner_app_unit_test(px4lib-matrix10f3-ut
 )
 
 
-add_airliner_app_unit_test(px4lib-matrix10f6-ut
+buildliner_add_app_unit_test(px4lib-matrix10f6-ut
     UTASSERT
     NO_HELGRIND
     NO_MASSIF
@@ -584,7 +584,7 @@ add_airliner_app_unit_test(px4lib-matrix10f6-ut
 )
 
 
-add_airliner_app_unit_test(px4lib-matrix10f10-ut
+buildliner_add_app_unit_test(px4lib-matrix10f10-ut
     UTASSERT
     NO_HELGRIND
     NO_MASSIF
@@ -608,7 +608,7 @@ add_airliner_app_unit_test(px4lib-matrix10f10-ut
 
 
 
-add_airliner_app_unit_test(px4lib-matrix6f10-ut
+buildliner_add_app_unit_test(px4lib-matrix6f10-ut
     UTASSERT
     NO_HELGRIND
     NO_MASSIF
